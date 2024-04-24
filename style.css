@@ -1,0 +1,84 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, 
+h1, h2, h3, h4, h5, h6, 
+p, a, img, ul, li {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+    box-sizing: border-box;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+body {
+    height: 100vh;
+	line-height: 1;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+ol, ul {
+	list-style: none;
+}
+
+.flex {
+    display: flex;
+}
+
+@font-face {
+    font-family: norse-bold;
+    src: url(./fonts/Norse-Bold.otf);
+}
+
+h1 {
+    font-family: norse-bold, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#side {
+    background-image: url(./img/goofer-bg.jpg);
+    background-size: cover;
+    position: relative;
+    flex: 2;
+    color: white;
+}
+
+header {
+    margin-top: 20vh;
+    padding: 0.5rem;
+    font-size: 4rem;
+    background-color: rgba(0, 0, 0, 0.5);
+    gap: 1vw;
+    justify-content: center;
+    align-items: center;
+}
+
+header h1 {
+    margin-top: 14px;
+}
+
+#side img {
+    height: 1.3em;
+    width: auto;
+}
+
+#side div {
+    position: absolute;
+    bottom: 0.5rem;
+    width: 100%;
+    justify-content: center;
+}
+
+#side a {
+    color: white;
+}
+
+#signup {
+    flex: 3;
+}
