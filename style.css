@@ -92,9 +92,13 @@ a {
 }
 
 #signup {
+    --signupBGColor: #141414;
+    --signupTextColor: #d9d9d9;
+
     flex: 3;
     overflow: auto;
-    background-color: #f2f2f2;
+    background-color: var(--signupBGColor);
+    color: var(--signupTextColor);
 }
 
 #signup > * {
@@ -110,9 +114,9 @@ a {
 
 #signup form {
     --submitButtonPadding: 1rem;
+    --formColor: #191919;
 
-    background-color: white;
-    box-shadow: 0px 2px 3px gray;
+    background-color: var(--formColor);
     padding-top: 5vh;
     padding-bottom: 5vh;
     position: relative;
@@ -120,10 +124,14 @@ a {
 }
 
 #signup form > div {
+    margin-top: 2vh;
     gap: 2rem;
     row-gap: 1rem;
-    border: 0px solid green;
     padding-top: 1rem;
+}
+
+#signup div.flex.column {
+    width: 20vw;
 }
 
 #signup label {
@@ -131,11 +139,13 @@ a {
     text-transform: uppercase;
     font-size: 0.7rem;
     letter-spacing: 0.5px;
+    margin-bottom: 0.25rem;
 }
 
 #signup input {
-    width: max(20vw, 250px);
-    border: 1px solid #cccccc;
+    border: 2px solid #464646;
+    color: var(--signupTextColor);
+    background-color: var(--formColor);
     border-radius: 3px;
     padding: 0.5rem;
     font-size: 1.25rem;
@@ -150,16 +160,20 @@ a {
 }
 
 #signup button {
-    border: none;
+    border: 2px solid var(--signupTextColor);
     border-radius: 5px;
-    background-color: black;
-    color: white;
+    background-color: var(--signupBGColor);
+    color: var(--signupTextColor);
     padding: var(--submitButtonPadding) 2rem;
-    box-shadow: 1px 1px 2px gray;
     position: absolute;
     bottom: calc(-3vh - 1.5rem - 2 * var(--submitButtonPadding));
     cursor: pointer;
     font-size: 1.1rem;
+}
+
+#signup button:hover {
+    background-color: var(--signupTextColor);
+    color: var(--signupBGColor);
 }
 
 #signup > div:last-child {
