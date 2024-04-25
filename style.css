@@ -131,7 +131,8 @@ a {
 }
 
 #signup div.flex.column {
-    width: 20vw;
+    min-width: 22vw;
+    flex: 1;
 }
 
 #signup label {
