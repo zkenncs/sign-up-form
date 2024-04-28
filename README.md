@@ -33,7 +33,7 @@
 <h3 align="center">Sign-Up Form</h3>
 
   <p align="center">
-    <a href="https://github.com/zkenncs/sign-up-form">View Demo</a>
+    <a href="https://htmlpreview.github.io/?https://github.com/zkenncs/sign-up-form/blob/main/signup.html" target="_blank">View Demo</a>
     ·
     <a href="https://github.com/zkenncs/sign-up-form/issues/new?labels=bug&template=bug-report---.md">Report Bug</a>
     ·
